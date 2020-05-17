@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A closer look to Java ConstraintValidator testing.
+title: A closer look to Java ConstraintValidator testing
 date:  2020-05-17 01:35:00 +0200
 categories: [Technical,Java]
 ---
@@ -140,7 +140,6 @@ public class UsernameUniqueValidatorTest {
     }
 
 }
-
 {% endhighlight%}
 				</p>
 			</div>
