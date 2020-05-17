@@ -145,11 +145,5 @@ public class UsernameUniqueValidatorTest {
 		</div>
 	</div>
 </div>
-<div class="wrapup">
-	<div class="row">
-		<div class="column">
-			Am I missing anything? Be my guest and share your thoughts from {% include icon-twitter.html username=site.twitter_username %}.
-		</div>
-	</div>
-</div>
+
 
