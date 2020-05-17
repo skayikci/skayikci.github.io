@@ -40,9 +40,7 @@ categories: [Technical,Java]
 		<div class="column">
 			<div class="main_text">
 				<p>
-					Constraint validator is somewhat a hard topic to think/use of I think. It gives you certain advantages and disadvantages. I'll share my knowledge about that and update this post when I have time in 
-[Link title]({{ site.baseurl }}{% post_url  2020-05-25-constraint-validation%})
-. I didn't want to miss that chance to share this knowledge, when I have enough courage to do so :)
+					[Constraint validator implementation] ({% post_url 2020-05-25-constraint-validation %}) is somewhat a hard topic to think/use of I think. It gives you certain advantages and disadvantages. I'll share my knowledge about that and update this post when I have time. I didn't want to miss that chance to share this knowledge, when I have enough courage to do so :)
 					But now, let's just talk about testing constraint validator testing.
 				</p>
 				<p>
