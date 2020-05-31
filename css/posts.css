@@ -3,3 +3,23 @@
 	color: lightslategrey;
 	display: inline;
 }
+
+.path {
+	background: #EEEEFF;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.yml-container {
+	
+}
+
+.yml-property {
+	font-style: italic;
+	font-weight: bold;
+	display:inline;
+}
+
+.yml-description {
+	display:inline;
+}

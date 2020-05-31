@@ -20,3 +20,9 @@ markdown: kramdown
 
 # Permalink
 permalink: /:categories/:title/
+#includes
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
