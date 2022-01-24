@@ -7,6 +7,11 @@ tags: [kubernetes, k8s]
 ---
 
 <div class="header">
+	<div class="row">
+		<div class="column">
+			<div class="volume_title">Vol #1</div>
+		</div>
+	</div>
 	<div class="row"> 
 		<div class="column">
 			<div class="last_updated"></div>
@@ -51,7 +56,7 @@ If you already have a MAC, this will be easy for you, since I'll focus the setup
   ```
 - Talk to your cluster:
   ```bash
-	$> kubectl get po -A
+	$> kubectl get pod -A
   ```
 - And enjoy.
 - PS: Don't forget to stop it (minikube stop) once you're done with it, as it consumes memory.
@@ -66,11 +71,11 @@ You'll hear mostly about:
 - Services
 - Controllers
 
-What are these? What do they do? Let's talk about them one by one.
+I'll talk about YAML files and Pods in this version. But let's dive to the fundamentals first.
 
 ### Fundamentals
 #### What problem does Kubernetes solve?
-Kubernetes is not new (found in ), it was first used withing Google, then open sourced on ... But why should we use it?
+Kubernetes is not new (found in 2004, with name Borg), it was first used withing Google, then open sourced on 2014 as Kubernetes But why should we use it?
 1. Users expect zero downtime: 
    The application should stay up and running 24/7. When you work with a container orchestration like kubernetes, you can schedule nodes or
    processes accross many machines. This allows you to make the system much more robust.
