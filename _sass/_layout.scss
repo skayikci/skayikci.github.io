@@ -33,7 +33,7 @@
     }
 
     .page-link {
-        color: $text-color;
+        color: darkcyan;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the last one
@@ -60,7 +60,7 @@
             padding-top: 10px;
             text-align: center;
 
-            > svg {
+            >svg {
                 width: 18px;
                 height: 15px;
 
@@ -87,6 +87,15 @@
             &:not(:last-child) {
                 margin-right: 0;
             }
+
+            &:hover {
+                color: whitesmoke
+            }
+
+            &:visited :hover{
+                color: whitesmoke
+            }
+
             margin-left: 20px;
         }
     }
@@ -128,29 +137,30 @@
 
 .footer-col-1 {
     width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: calc(35% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
     width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    width: calc(20% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
     width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    width: calc(45% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
+
     .footer-col-1,
     .footer-col-2 {
         width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
+        width: calc(50% - (#{$spacing-unit} / 2));
     }
 
     .footer-col-3 {
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        width: calc(100% - (#{$spacing-unit} / 2));
     }
 }
 
@@ -158,7 +168,7 @@
     .footer-col {
         float: none;
         width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
+        width: calc(100% - (#{$spacing-unit} / 2));
     }
 }
 
@@ -179,7 +189,7 @@
     margin-left: 0;
     list-style: none;
 
-    > li {
+    >li {
         margin-bottom: $spacing-unit;
     }
 }
@@ -239,4 +249,59 @@
             font-size: 18px;
         }
     }
+}
+
+/* Define the light theme (default) */
+:root {
+    --bg-color: white;
+    /* Background color */
+    --text-color: black;
+    /* Text color */
+}
+
+/* Define the dark theme */
+.dark-theme {
+    --bg-color: black;
+    /* Background color */
+    --text-color: white;
+    /* Text color */
+    color: white
+}
+
+/* Define the dark theme */
+.side-nav .page-link .nav-element .dark-theme {
+    --bg-color: black;
+    /* Background color */
+    --text-color: white;
+    /* Text color */
+    color: white
+}
+
+/* Apply the theme colors to the body element */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Style the toggle button */
+#toggle {
+    position: fixed;
+    /* Fix the position of the button */
+    bottom: 10px;
+    /* Set the bottom position to 10 pixels */
+    right: 10px;
+    /* Set the right position to 10 pixels */
+    padding: 10px;
+    /* Add some space around the button */
+    border: none;
+    /* Remove the border */
+    border-radius: 5px;
+    /* Add some rounded corners */
+    cursor: pointer;
+    /* Change the cursor to a pointer */
+}
+
+/* Change the button color on hover */
+#toggle:hover {
+    background-color: gray;
 }
