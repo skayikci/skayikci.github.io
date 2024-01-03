@@ -4,7 +4,20 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <!-- <h1 class="page-heading">My portfolio </h1>
+
+  <ul class="portfolio-list">
+    {% for elem in site.portfolio %}
+      <li>  
+        <h2>
+          <a class="post-link" href="{{ elem.url | prepend: site.baseurl }}">{{ elem.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul> -->
+
+
+  <h1 class="page-heading">Blog Posts</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}

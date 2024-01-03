@@ -18,6 +18,12 @@ github_username:  skayikci
 # Build settings
 markdown: kramdown
 
+# collections
+# collections:
+#   portfolio:
+#     output: true
+#     permalink: /portfolio/:path/
+
 # Permalink
 permalink: /:categories/:title/
 #includes
